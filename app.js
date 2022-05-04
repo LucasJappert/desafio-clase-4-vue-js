@@ -13,7 +13,7 @@ Vue.component("my-table", {
 
     template:
         `<div>
-            <table>
+            <table :class="styles">
                 <thead>
                     <tr>
                         <th>Nombre</th>
@@ -68,11 +68,4 @@ var app = new Vue({
             styles: "day-three",
         },
     },
-
-    // ¿Cómo hago que esto sea dinámico?
-    methods: {
-        styling() {
-            return this.one.styles
-        }
-    }
 });
